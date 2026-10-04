@@ -1,0 +1,6 @@
+{
+  "name": "AdEarn Pro - Watch Ads & Earn Rewards",
+  "description": "Next-generation watch-and-earn rewards platform with real-time CPA tracking, instant wallet credit, and multi-method withdrawals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

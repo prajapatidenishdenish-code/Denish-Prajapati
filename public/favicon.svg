@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favShieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="favGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="favPlayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <filter id="favGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Ambient Glow -->
+  <polygon points="32,4 58,18 58,46 32,60 6,46 6,18" fill="#F59E0B" opacity="0.25" filter="url(#favGlow)" />
+
+  <!-- Shield Base Background -->
+  <polygon points="32,6 56,19 56,45 32,58 8,45 8,19" fill="url(#favShieldGrad)" stroke="url(#favGoldGrad)" stroke-width="3.5" stroke-linejoin="round" />
+
+  <!-- Inner Tech Track Circle -->
+  <circle cx="32" cy="32" r="19" stroke="#334155" stroke-width="2" />
+  <circle cx="32" cy="32" r="19" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="8 6" stroke-linecap="round" opacity="0.85" />
+
+  <!-- Play Symbol (Watch) -->
+  <polygon points="27,22 43,32 27,42" fill="url(#favPlayGrad)" />
+  <polygon points="28,25 39,32 28,39" fill="#FEF08A" opacity="0.75" />
+
+  <!-- Spark Star (Earn) -->
+  <circle cx="45" cy="19" r="4" fill="#10B981" />
+  <path d="M45,13 L46,18 L51,19 L46,20 L45,25 L44,20 L39,19 L44,18 Z" fill="#34D399" />
+</svg>
